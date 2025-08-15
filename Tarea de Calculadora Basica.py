@@ -7,6 +7,7 @@ print("2. Resta")
 print("3. Multiplicación")
 print("4. División")
 
+
 opcion = input("Ingrese el número de la operación (1-4): ")
 
 # Captura de los números
