@@ -1,5 +1,6 @@
 print("_______________________________")
 print("Gabiela Amaya")
+
 print("Codigo: USTRO12324")
 print("____________________________________")
 # crear función
