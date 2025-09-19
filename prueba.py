@@ -11,6 +11,7 @@ from PyQt6.QtCore import Qt
 
 
 class Calculadora(QWidget):
+
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Calculadora Básica")
