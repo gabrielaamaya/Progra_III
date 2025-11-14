@@ -17,7 +17,7 @@ def despedida(request):  # esta es mi segunda vista
         <html>
             <body style="background-color:#f0f8ff; text-align:center; padding-top:100px;">
                 <h1 style="font-size:36px; color:#0077cc; font-family:Arial, sans-serif;">
-                    ¡Fue un gusto trabajar con ustedes! 😊
+                    ¡Fue un gusto trabajar con ustedes! 
                 </h1>
             </body>
         </html>
@@ -40,5 +40,24 @@ def calculadora(request, agno):
     """)
 
 
+def operaciones(request, num1, num2):
+    suma = num1 + num2
+    resta = num1 - num2
+    multiplicacion = num1 * num2
+    division = round(num1 / num2, 2) if num2 != 0 else "No se puede dividir entre 0"
 
+    return HttpResponse(f"""
+        <html>
+            <body style="background-color:#FFFFFF; text-align:center; padding-top:50px; font-family:Arial;">
+                <h2 style="color:#2e7d32;">Operaciones Básicas</h2>
+                <p><strong>Primer número:</strong> {num1}</p>
+                <p><strong>Segundo número:</strong> {num2}</p>
+                <hr style="width:50%;">
+                <p><strong>Suma:</strong> {suma}</p>
+                <p><strong>Resta:</strong> {resta}</p>
+                <p><strong>Multiplicación:</strong> {multiplicacion}</p>
+                <p><strong>División:</strong> {division}</p>
+            </body>
+        </html>
+    """)
 

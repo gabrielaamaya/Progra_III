@@ -1,5 +1,5 @@
 """
-URL configuration for prograIII project.
+URL configuration for basico02 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -16,14 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from test01.views import saludo, despedida, calculadora, operaciones  # Importar la nueva vista
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Hola/', saludo),
-    path('Goodbye/', despedida),
-    path('edad/<int:agno>/', calculadora),
-    path('operaciones/<int:num1>/<int:num2>/', operaciones),  # Nueva ruta para operaciones
+    path('', views.hora_y_fecha, name='hora_y_fecha'),
 ]
-
-
