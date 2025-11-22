@@ -1,5 +1,5 @@
 """
-URL configuration for basico02 project.
+URL configuration for plantilla project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -16,10 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views
+from plantilla.views import helloword, miPrimerPlantilla, categoriaEdad
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.hora_y_fecha, name='hora_y_fecha'),
-
+    path('hola/', helloword),
+    path('plantilla1/', miPrimerPlantilla),
+    path('edad/<int:edad>/', categoriaEdad),  
 ]
+
+

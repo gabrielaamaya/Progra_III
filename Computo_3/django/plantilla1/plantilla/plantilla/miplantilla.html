@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Plantilla </title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #4facfe);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        header {
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            font-weight: 800;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: 300;
+            opacity: 0.8;
+        }
+
+        /* 🔵 NUEVO: Cada imagen con tarjeta individual */
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            padding-bottom: 60px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background: rgba(255, 255, 255, 0.18);
+            padding: 15px;
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 26px rgba(0, 0, 0, 0.45);
+        }
+
+        .tarjeta img {
+            width: 280px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MI PRIMERA </h1>
+        <h2> PLANTILLA EN PAGINA HTML</h2>
+    </header>
+
+    <div class="galeria">
+
+        <div class="tarjeta">
+            <img src="https://i.blogs.es/42ea44/diseno/840_560.jpeg" alt="Imagen 1">
+        </div>
+
+        <div class="tarjeta">
+            <img src="https://intelcorp.scene7.com/is/image/intelcorp/30s-vid-intel-pro-rpl-14thg-gameplay-ag-na-hqprim-na-us-eng-16x9-video-thumbnail:1920-1080?wid=480&hei=270" alt="Imagen 2">
+        </div>
+
+        <div class="tarjeta">
+            <img src="https://www.masgamers.com/wp-content/uploads/2022/01/1-3-531x354.jpg" alt="Imagen 3">
+        </div>
+
+    </div>
+
+</body>
+</html>
